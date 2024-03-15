@@ -1,12 +1,16 @@
 import { Blog } from "../hooks";
 import { Avatar } from "./Avatar";
 import parse from 'html-react-parser';
-import Spinner from "./Spinner";
+import { Appbar } from "./Appbar";
+import { SkeletonLoader } from "./Spinner";
 
 export const BlogComp = ({ blog }: { blog?: Blog }) => {
     if (!blog) {
         return <div>
-            <Spinner/>
+            <Appbar/>
+            <div>
+                <SkeletonLoader/>
+            </div>
         </div>;
     }
 

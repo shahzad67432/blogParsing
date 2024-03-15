@@ -1,11 +1,20 @@
-const Spinner = () => {
+export const SkeletonLoader = () => {
   return (
-    <div style={{ display: 'inline-block', position: 'relative', width: '80px', height: '80px' }}>
-      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-        <div style={{ border: '4px solid rgba(0, 0, 0, 0.1)', borderRadius: '50%', borderTopColor: '#3498db', width: '60px', height: '60px', animation: 'spin 1s ease-in-out infinite' }}></div>
+    <div style={{ padding: '1rem 2rem', backgroundColor: '#F3F4F6', borderRadius: '8px', marginBottom: '1rem' }}>
+      <div style={{ marginBottom: '1rem' }}>
+        <div style={{ height: '1.5rem', width: '80%', backgroundColor: '#E5E7EB', borderRadius: '4px' }}></div>
+      </div>
+      <div style={{ display: 'flex', marginBottom: '1rem' }}>
+        <div style={{ width: '50%', marginRight: '1rem' }}>
+          <div style={{ height: '1rem', width: '100%', backgroundColor: '#E5E7EB', borderRadius: '4px' }}></div>
+        </div>
+        <div style={{ width: '50%' }}>
+          <div style={{ height: '1rem', width: '100%', backgroundColor: '#E5E7EB', borderRadius: '4px' }}></div>
+        </div>
+      </div>
+      <div>
+        <div style={{ height: '10rem', width: '100%', backgroundColor: '#E5E7EB', borderRadius: '4px' }}></div>
       </div>
     </div>
   );
 };
-
-export default Spinner;
