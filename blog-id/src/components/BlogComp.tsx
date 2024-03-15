@@ -1,10 +1,13 @@
 import { Blog } from "../hooks";
 import { Avatar } from "./Avatar";
 import parse from 'html-react-parser';
+import Spinner from "./Spinner";
 
 export const BlogComp = ({ blog }: { blog?: Blog }) => {
     if (!blog) {
-        return <div>Loading...</div>;
+        return <div>
+            <Spinner/>
+        </div>;
     }
 
     const blogTitle = blog.title.toUpperCase();
