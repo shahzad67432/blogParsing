@@ -2,14 +2,21 @@ import { useBlog } from "../hooks";
 import { Appbar } from "../components/Appbar";
 import { BlogComp } from "../components/BlogComp";
 import { useParams } from "react-router-dom";
+import { SkeletonLoader } from "../components/Spinner";
 
 function Blog() {
   const { id } = useParams();
   const { blog, loading } = useBlog({
     id: id || "",
   });
-  if (loading) {
-    return <div>Loading...</div>;
+  if (loading || !blog) {
+    return <div>
+      <SkeletonLoader />
+      <SkeletonLoader />
+      <SkeletonLoader />
+      <SkeletonLoader />
+      <SkeletonLoader />
+    </div>;
   }
   return (
     <>

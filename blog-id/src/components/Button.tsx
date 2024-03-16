@@ -28,7 +28,7 @@ export const Button = () => {
 
     return (
         <div style={{ paddingRight: "20px" }}>
-            <Link to={'/publish'} style={{ ...buttonStyle, ...buttonHoverStyle, fontSize: "15px" }}>
+            <Link to={'/'} style={{ ...buttonStyle, ...buttonHoverStyle, fontSize: "15px" }}>
                 Publish
             </Link>
         </div>

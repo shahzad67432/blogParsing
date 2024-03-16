@@ -5,9 +5,9 @@ import { Button } from "./Button";
 export const Appbar = () => {
     return (
         <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #e5e7eb", padding: "8px 52px" }}>
-            <NavLink to={'http://localhost:5173/blogs'} style={{ fontWeight: "thin", fontSize: "1.75rem", display: "flex", justifyContent: "center", cursor: "pointer", textDecoration: "none", color: "#000" }}>
+            <NavLink to={'https://galaxy-mocha-iota.vercel.app/'} style={{ fontWeight: "thin", fontSize: "1.75rem", display: "flex", justifyContent: "center", cursor: "pointer", textDecoration: "none", color: "#000" }}>
                 <div style={{ display: "flex", justifyContent: "center", flexDirection: "column", textAlign: "center", fontFamily:"sans-serif", fontSize:"24px" }}>
-                    Medium
+                    Galaxy
                 </div>
             </NavLink>
             <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
