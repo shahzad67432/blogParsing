@@ -1,0 +1,152 @@
+/* blog container */
+
+.blog-container {
+    margin: 0 auto; /* Center align */
+    max-width: 800px; /* Limit width for better readability */
+    padding: 0 1rem; /* Add padding for better spacing */
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .blog-container {
+      max-width: 90%; /* Adjust width for smaller screens */
+    }
+  }
+
+/* Styles for BlogComp */
+
+/* Container for the entire blog component */
+.blog-comp-container {
+    padding: 2rem;
+    width: 100%;
+}
+
+/* Styles for blog details */
+.blog-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-title {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #3f3f3f; /* Change text color for better contrast */
+}
+
+.blog-date {
+    font-weight: lighter;
+    font-size: 1rem;
+    color: #3f3f3f; /* Change text color for better contrast */
+}
+
+/* Styles for author info */
+.author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: #6B7280;
+    background-color: #f5f5f5; /* Change background color for better contrast */
+}
+
+.author-details {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.author-name {
+    padding-left: 0.5rem;
+}
+
+.author-description {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Container for blog content */
+.blog-content-container {
+    padding: 2rem;
+    background-color: #fff5ee;
+}
+
+.blog-content {
+    padding: 2rem;
+    background-color: #fff5ee;
+    color: rgb(55,65,81);
+}
+
+@media screen and (max-width: 534px) {
+    /* Adjustments for smaller screens */
+    .blog-comp-container {
+        padding: 1rem;
+    }
+    
+    .blog-title {
+        font-size: 1.2rem;
+    }
+    
+    .blog-date {
+        font-size: 0.8rem;
+    }
+    
+    .author-info {
+        display: none;
+    }
+    
+    .author-description {
+        display: none; /* Hide author description */
+    }
+    
+    .blog-content-container {
+        padding: 1rem;
+    }
+    
+    .blog-content {
+        padding: 1rem;
+    }
+}
+
+/* AppBAr css */
+
+.appbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 8px 16px; /* Adjusted padding */
+}
+
+.brand-link {
+    font-weight: thin;
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.brand-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+.appbar-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .appbar-container {
+        padding: 8px; /* Adjusted padding for smaller screens */
+    }
+}

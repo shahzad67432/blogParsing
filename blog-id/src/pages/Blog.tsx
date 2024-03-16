@@ -23,7 +23,7 @@ function Blog() {
       <div style={{ marginBottom: "1rem" }}>
         <Appbar />
       </div>
-      <div style={{ backgroundColor: "#fff5ee", marginLeft: "80px", marginRight:"80px" }}>
+      <div className="blog-container">
         <BlogComp blog={blog} />
       </div>
     </>
